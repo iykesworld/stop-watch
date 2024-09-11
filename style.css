@@ -1,0 +1,82 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #303348;
+}
+
+.wrapper{
+    width: 400px;
+    height: 100vh;
+    background-image: linear-gradient(#10b291, #7bc44d);
+    border-radius: 30px;
+    border: 10px solid black;
+    margin: 10px auto 10px auto;
+}
+.speaker{
+    width: 100px;
+    background-color: black;
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px auto ;
+
+}
+h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px #30344c;
+}
+
+.timerDisplay{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.watch-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border-top: 1rem solid #35374B;
+    border-bottom: 1rem solid #35374B;
+    border-left: 1rem solid #78A083;
+    border-right: 1rem solid #78A083;
+    animation: watchSpinner 8s linear infinite;
+}
+@keyframes watchSpinner {
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.buttons{
+    width: 90%;
+    margin: 30px auto 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 100px;
+    height: 45px;
+    background-color: #35374B;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
